@@ -1,0 +1,17 @@
+<body>
+  
+
+<h2>Seja bem vindo à nossa loja</h2>
+
+Temos diversos produtos disponíveis
+<br><br>
+
+<hr/>
+<app-item-teste></app-item-teste>
+
+<app-item-output (newItemEvent)="addItem($event)">   
+</app-item-output>
+<ul> 
+<li *ngFor="let item of items">{{item}}</li> 
+</ul>
+</body>
